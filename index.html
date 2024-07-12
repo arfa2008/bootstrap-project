@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Allbirds</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+    }
+
+    .card-img-top {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+
+    .card-hover {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-hover .d-grid {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+
+    }
+
+    .card-hover:hover .d-grid {
+      opacity: 1;
+    }
+   
+    
+.cool::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  transition: width .3s;
+}
+
+.cool:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- nav bar section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top" style="font-size: 16px;">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold text-dark cool" href="index.html">Men</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold text-dark cool" href="women.html">Women</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-dark cool" href="#">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold text-dark cool" href="#">Socks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger fw-bold cool" href="#">Sale</a>
+          </li>
+        </ul>  
+
+        <a class="navbar-brand fw-bold m-0" style=" font-family: Dancing Script, cursive; font-weight: bold;font-size: 30px; color: #000;" href="#">Allbirds</a>
+        <div class="d-flex align-items-center gap-3">
+          <a class="nav-link p-0 fw-bold text-dark cool" href="#">Sustainability</a>
+          <a class="nav-link p-0 fw-bold text-dark cool" href="#">Rerun</a>
+          <a class="nav-link p-0 fw-bold text-dark cool" href="#">Stores</a>
+          <a class="nav-link p-0" href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
+          <a class="nav-link p-0" href="#"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+          <a class="nav-link p-0" href="#"><i class="fa-solid fa-cart-shopping" style="color: #050505;"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- main image section -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="margin-top: 4.5em;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/img1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption position-absolute top-90 end-0 translate-middle-y text-end p-4" style="right: 0;">
+          <h5 class="mb-3" style="font-size: 40px;">Breathable By Nature</h5>
+          <p class="mb-4">Airy, light, rooted in comfort. Explore the Tree Collection.</p>
+          <button type="button" class="btn btn-primary btn-lg btn-light fw-300 text-dark me-2">Shop Men</button>
+          <button type="button" class="btn btn-secondary btn-lg btn-light fw-300 text-dark">Shop Women</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- second section -->
+  <div class="container my-5">
+    <h2 class="text-center">Our Favorites</h2>
+    <ul class="nav nav-tabs justify-content-center" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#everyday">For Everyday</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#travel">For Travel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#activity">For Activity</a>
+      </li>
+    </ul>
+  </div>
+  <div class="tab-content">
+    <div id="everyday" class="tab-pane active">
+      <div class="row mt-4"
+        style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <img src="images/shoe1.avif" class="card-img-top" alt="Tree Dasher 2">
+            <div class="card-body">
+              <h5 class="card-title">Tree Dasher 2</h5>
+              <p class="card-text">Bouncy, Lightweight Active Shoe</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-light btn-outline-dark btn-lg " style="font-size: 1em;" type="button">SHOP
+                MEN</button>
+              <button class="btn btn-light btn-outline-dark btn-lg " style="font-size: 1em;" type="button">SHOP
+                WOMEN</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <img src="images/shoe2.avif" class="card-img-top" alt="Tree Runner Go">
+            <div class="card-body">
+              <h5 class="card-title">Tree Runner Go</h5>
+              <p class="card-text">Reimagined Breezy, Everyday Sneaker</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                MEN</button>
+              <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                WOMEN</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <img src="images/shop3.avif" class="card-img-top" alt="Tree Runner">
+            <div class="card-body">
+              <h5 class="card-title">Tree Runner</h5>
+              <p class="card-text">Breezy, Everyday Sneaker</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                MEN</button>
+              <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                WOMEN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- travel tab -->
+    <div id="travel" class="tab-pane fade">
+      <div class="tab-content">
+        <div id="everyday" class="tab-pane active">
+          <div class="row mt-4"
+            style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="images/shop2.avif" class="card-img-top" alt="Tree Dasher 2">
+                <div class="card-body">
+                  <h5 class="card-title">Tree Lounger</h5>
+                  <p class="card-text">Ultralight, Comfy Slip-On</p>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    MEN</button>
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    WOMEN</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="images/shop4.avif" class="card-img-top" alt="Tree Runner Go">
+                <div class="card-body">
+                  <h5 class="card-title">Tree Dasher Relay</h5>
+                  <p class="card-text">Comfy, Breezy, Everyday Walks</p>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    MEN</button>
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    WOMEN</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="images/shop5.avif" class="card-img-top" alt="Tree Runner">
+                <div class="card-body">
+                  <h5 class="card-title">Tree Skipper</h5>
+                  <p class="card-text">Lightweight Boat Shoe</p>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    MEN</button>
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    WOMEN</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- everyday tab -->
+    <div id="activity" class="tab-pane fade">
+      <div class="tab-content">
+        <div id="everyday" class="tab-pane active">
+          <div class="row mt-4"
+            style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="images/Core-Site-1.avif" class="card-img-top" alt="Tree Dasher 2">
+                <div class="card-body">
+                  <h5 class="card-title">Tree Flyer 2</h5>
+                  <p class="card-text">Comfortable, Springy Active Shoe</p>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    MEN</button>
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    WOMEN</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="images/core-site2.avif" class="card-img-top" alt="Tree Runner Go">
+                <div class="card-body">
+                  <h5 class="card-title">Golf Dasher</h5>
+                  <p class="card-text">Stabilizing And Comfy For The Green</p>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    MEN</button>
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    WOMEN</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card card-hover">
+                <img src="images/coresite3.avif" class="card-img-top" alt="Tree Runner">
+                <div class="card-body">
+                  <h5 class="card-title">Trail Runner SWT</h5>
+                  <p class="card-text">Durable, Grippy, Off Road Terrain</p>
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    MEN</button>
+                  <button class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;" type="button">SHOP
+                    WOMEN</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="travel" class="tab-pane fade">
+          <div class="tab-content">
+            <div id="everyday" class="tab-pane active">
+              <div class="row mt-4">
+                <div class="col-md-4">
+                  <div class="card card-hover">
+                    <img src="images/shop2.avif" class="card-img-top" alt="Tree Dasher 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Tree Lounger</h5>
+                      <p class="card-text">Ultralight, Comfy Slip-On</p>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-light btn-outline-dark btn-lg" type="button">SHOP
+                        MEN</button>
+                      <button class="btn btn-light btn-outline-dark btn-lg" type="button">SHOP
+                        WOMEN</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card card-hover">
+                    <img src="images/shop4.avif" class="card-img-top" alt="Tree Runner Go">
+                    <div class="card-body">
+                      <h5 class="card-title">Tree Dasher Relay</h5>
+                      <p class="card-text">Comfy, Breezy, Everyday Walks</p>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-light btn-outline-dark btn-lg" type="button">SHOP
+                        MEN</button>
+                      <button class="btn btn-light btn-outline-dark btn-lg" type="button">SHOP
+                        WOMEN</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card card-hover">
+                    <img src="images/shop5.avif" class="card-img-top" alt="Tree Runner">
+                    <div class="card-body">
+                      <h5 class="card-title">Tree Skipper</h5>
+                      <p class="card-text">Lightweight Boat Shoe</p>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                      <button class="btn btn-light btn-outline-dark btn-lg" type="button">SHOP
+                        MEN</button>
+                      <button class="btn btn-light btn-outline-dark btn-lg" type="button">SHOP
+                        WOMEN</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- next section -->
+  <div class="container d-flex flex-column align-items-center justify-content-center pt-5 gap-2">
+    <img src="images/main 1 jog.avif" class="img-fluid " style="height: auto; max-width:100%;" alt="Centered Image">
+    <h1 class="text-center">Dive in</h1>
+    <p class="text-center">Deep blues. Cool whites. Vibrant pops of pink. Our breeziest styles, now in new summer
+      colors.</p>
+    <div class="d-flex gap-2">
+      <button type="button" class="btn btn-light btn-outline-dark btn-lg">Shop men</button>
+      <button type="button" class="btn btn-light btn-outline-dark btn-lg">Shop Women</button>
+    </div>
+  </div>
+  <!-- card carousel -->
+  <!-- card scroll -->
+  <div class="arrival" style="padding-top: 3.1rem;">
+    <h1 class="text-left" style="padding-left: 1em;">NEW ARRIVAL</h1>
+  </div>
+  <!-- <div class="row row-cols-1 row-cols-md-2 g-4 pt-4">
+          <div class="col">
+            <div class="card">
+              <img src="images/classic1.jpg" class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(222 224 229)">
+                <h5 class="card-title">Men's tree runner go</h5>
+                <p class="card-text">LIMITED EDITION/COLOR BREEZY BLUE</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/classic2.jpg" class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(222 224 229)">
+                <h5 class="card-title">Men's tree runner go</h5>
+                <p class="card-text">LIMITED EDITION/COLOR BREEZY Green</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/classic3.jpg" class="card-img-top" alt="...">
+              <div class="card-body" style="background-color:  rgb(222 224 229);">
+                <h5 class="card-title">Men's tree runner go</h5>
+                <p class="card-text">LIMITED EDITION/COLOR BREEZY Grey</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="images/class1.jpg" class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: rgb(222 224 229)">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">LIMITED EDITION/COLOR BREEZY BIEGE</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+  <div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/class2.jpg" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: rgb(199 205 222);">
+            <h5 class="card-title">Men's tree runner go</h5>
+            <p class="card-text">LIMITED EDITION/COLOR BREEZY Blue</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/class1.jpg" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: rgb(199 205 222);">
+            <h5 class="card-title">Men's tree runner go</h5>
+            <p class="card-text">LIMITED EDITION/COLOR BREEZY PEACH</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/classic2.jpg" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: rgb(199 205 222);">
+            <h5 class="card-title">Men's tree runner go</h5>
+            <p class="card-text">LIMITED EDITION/COLOR BREEZY GREEN</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/classic3.jpg" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: rgb(199 205 222);">
+            <h5 class="card-title">Men's tree runner go</h5>
+            <p class="card-text">LIMITED EDITION/COLOR BREEZY GREY</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/classic4.jpg" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: rgb(199 205 222);">
+            <h5 class="card-title">Men's tree runner go</h5>
+            <p class="card-text">LIMITED EDITION/COLOR BREEZY WHITE</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/classic5.jpg" class="card-img-top" alt="...">
+          <div class="card-body" style="background-color: rgb(199 205 222);">
+            <h5 class="card-title">Men's tree runner go</h5>
+            <p class="card-text">LIMITED EDITION/COLOR BREEZY DARK GREEN BEIGE</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- next main img -->
+  <div class="container d-flex flex-column align-items-center justify-content-center pt-5 gap-2">
+    <img src="images/main 2jpg.avif" class="img-fluid " style="height: auto; max-width:100%;" alt="Centered Image">
+    <h1 class="text-center">From Cardio To Patio</h1>
+    <p class="text-center">All the bouncy active shoes you need to keep in stride with the season.</p>
+    <div class="d-flex gap-2">
+      <button type="button" class="btn-dark btn btn-outline-light btn-lg">Shop men</button>
+      <button type="button" class="btn-dark btn btn-outline-light btn-lg">Shop Women</button>
+    </div>
+  </div>
+  <div class="collection" style="padding-top: 3.5rem !important;">
+    <h1 class="text-left" style="padding-left: 1em;">SHOP OF THE COLLECTION</h1>
+  </div>
+  <div class="card-group gap-4 pt-5" style="width: 90%;  justify-content: center;align-content: center;margin: 0 auto;">
+    <div class="card" style="border: 1px solid black;">
+      <img src="images/COLLECTION1.JPG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">GET READY TRAVEL</h5>
+        <p class="card-text">The latest style and limited edition colors that you can only find (while the last
+          that is)</p>
+      </div>
+    </div>
+    <div class="card" style="border: 1px solid black;">
+      <img src="images/COLLECTION3.JPG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">LIGHTER SHOES FOR NORMAL DAY</h5>
+        <p class="card-text">The light breezy shoes made with our innovative ecalyptus fiber.</p>
+      </div>
+    </div>
+    <div class="card" style="border: 1px solid black;">
+      <img src="images/COLLECTION2.JPG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">THE SUPERLIGHT Collection</h5>
+        <p class="card-text">Versatile style plus packable desgin equal shoes that are always good to go</p>
+      </div>
+    </div>
+  </div>
+  <!-- main section 3 -->
+  <div class="container d-flex flex-column align-items-center justify-content-center pt-5 gap-2">
+    <img src="images/Secondary_Homepage_Desktop_-_Sustainability.avif" class="img-fluid "
+      style="height: auto; max-width:100%;" alt="Centered Image">
+    <h1 class="text-center">More Updates About Less Carbon</h1>
+    <p class="text-center">Reducing the carbon footprint of our products is at the heart of everything we do. And
+      we’ve got good news: we continue to make headway. Read about our progress from 2022 in our latest Flight
+      Status report.</p>
+    <button type="button" class="btn btn-light btn-outline-dark btn-lg">OUR SUSTANABILITY STARTEGY</button>
+  </div>
+  <div class="arrival-1" style="padding-top: 3.1rem;">
+    <h1 class="text-left" style="padding-left: 1em;">Allbirds Sustainability Initiatives </h1>
+  </div>
+  <div class="card-group gap-4 pt-5" style="width: 90%;  justify-content: center;align-content: center;margin: 0 auto;">
+    <div class="card" style="border: 1px solid black;">
+      <img src="images/explore1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">GET READY TRAVEL</h5>
+        <p class="card-text">The latest style and limited edition colors that you can only find (while the last
+          that is)</p>
+      </div>
+    </div>
+    <div class="card" style="border: 1px solid black;">
+      <img src="images/explre5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">LIGHTER SHOES FOR NORMAL DAY</h5>
+        <p class="card-text">The light breezy shoes made with our innovative ecalyptus fiber.</p>
+      </div>
+    </div>
+    <div class="card" style="border: 1px solid black;">
+      <img src="images/explore4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">THE SUPERLIGHT Collection</h5>
+        <p class="card-text">Versatile style plus packable desgin equal shoes that are always good to go</p>
+      </div>
+    </div>
+  </div>
+  <!-- next section -->
+  <div class="container text-center py-5">
+    <div class="email" style="background-color: #f8f9fa; padding: 2em;">
+      <h2 class="mb-4">Want First Dibs?</h2>
+      <p class="mb-4">Join our email list and be the first to know about new limited edition products, material
+        innovations, and lots of other fun updates.</p>
+      <form class="d-flex justify-content-center">
+        <input type="email" class="form-control me-2" placeholder="Enter Your Email Address" style="max-width: 300px;">
+        <button type="submit" class="btn btn-dark">Sign Up</button>
+      </form>
+      <p class="mt-3"><small>Note: You can opt-out at any time. See our <a href="#" style="color: black;">Privacy
+            Policy</a> and <a href="#" style="color: black;">Terms</a>.</small></p>
+    </div>
+  </div>
+  <!-- content -->
+  <h2 class="pb-2" style="padding-left: 2.9em;">THE ALL BIRDS APPROACH</h2>
+  <div class="container px-1 py-1" id="hanging-icons">
+    <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3 class="text-body-emphasis" style="font-size: 1.4rem;">Wear-All-Day Comfort</h3>
+          <p>Lightweight, bouncy, and wildly comfortable, Allbirds shoes make any outing feel effortless. Slip in, lace
+            up, or slide them on and enjoy the comfy support.</p>
+          <a href="#" style="color: black;">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3 class="text-body-emphasis" style="font-size: 1.4rem;">Sustainability In Every Step</h3>
+          <p>From materials to transport, we’re working to reduce our carbon footprint to near zero. Holding ourselves
+            accountable and striving for climate goals isn’t a 30-year goal—it’s now.</p>
+          <a href="#" style="color: black;">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h3 class="text-body-emphasis" style="font-size: 1.4rem;">Materials From The Earth</h3>
+          <p>We replace petroleum-based synthetics with natural alternatives wherever we can. Like using wool, tree
+            fiber, and sugar cane. They’re soft, breathable, and better for the planet—win, win, win.</p>
+          <a href="#" style="color: black;">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section -->
+  <div class="foot" style="padding-top: 3em;">
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <h6 class="text-uppercase fw-bold" style="color: white; font-size: 23px;">Help</h6>
+            <ul class="list-unstyled"style="display: flex;flex-direction: column; gap: 6px;">
+              <li><a href="#" class="text-white" style="text-decoration: none;">1-888-963-8944</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">1-814-251-9966 (Text)</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">help@allbirds.com</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Returns/Exchanges</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">FAQ/Contact Us</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Afterpay</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Shop</h6>
+            <ul class="list-unstyled"style="display: flex;flex-direction: column; gap: 6px;">
+              <li><a href="#" class="text-white" style="text-decoration: none;">Men's Shoes</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Women's Shoes</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Men's Apparel</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Women's Apparel</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Socks</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Finder</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Gift Cards</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Refer a Friend</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Company</h6>
+            <ul class="list-unstyled"style="display: flex;flex-direction: column; gap: 6px;">
+              <li><a href="#" class="text-white" style="text-decoration: none;">Our Stores</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Our Story</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Our Materials</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Sustainability</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Investors</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Care</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Partnerships</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Affiliates</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Bulk Orders</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Careers</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Press</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Allbirds Responsible Disclosure
+                  Program</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">California Transparency Act</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Community Offers</a></li>
+              <li><a href="#" class="text-white" style="text-decoration: none;">Our Blog - The Perch</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <div class="d-inline-block mb-2">
+              <img src="images/flag-c4.svg" alt="Certified B Corporation" class="img-fluid" style="width: 50px;">
+              <span class="text-white">Certified B Corporation</span>
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/flag-us.svg" alt="United States Flag" class="img-fluid" style="width: 30px;">
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/flag-ca2.svg" alt="Canadian Flag" class="img-fluid" style="width: 30px;">
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/flag-ca3.svg" alt="United Kingdom Flag" class="img-fluid" style="width: 30px;">
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/flag-c4.svg" alt="Germany Flag" class="img-fluid" style="width: 30px;">
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/flag-c5.svg" alt="Australia Flag" class="img-fluid" style="width: 30px;">
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/flag-c6.svg" alt="New Zealand Flag" class="img-fluid" style="width: 30px;">
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/Japan-Flag7.svg" alt="Japan Flag" class="img-fluid" style="width: 30px;">
+            </div>
+            <div class="d-inline-block mx-3">
+              <img src="images/South-Korea-Flag8.svg" alt="South Korea Flag" class="img-fluid" style="width: 30px;">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="mb-0 text-white">© 2024 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility</p>
+            <p class="mb-0 text-white">Do Not Sell My Personal Information</p>
+            <div class="social"
+              style="display: flex; flex-direction: row; gap: 16px; justify-content: center; align-items: center;padding-top: 1em;">
+              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-google" style="color: #f7f7f8;"></i>
+              <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i>
+              <i class="fa-brands fa-tiktok" style="color: #f4f5f5;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
