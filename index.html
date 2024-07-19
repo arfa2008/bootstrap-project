@@ -20,9 +20,26 @@
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -36,7 +53,7 @@
     }
 
     body {
-      font-family: "Poppins", sans-serif;
+      font-family: "Poppins","Raleway", sans-serif, ;
       font-style: normal;
     }
 
@@ -78,7 +95,7 @@
     }
 
     .cool:hover::after {
-      width: 55px;
+      width: 100%;
       transition: width .3s;
     }
   </style>
@@ -86,45 +103,47 @@
 
 <body>
   <!-- nav bar section -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top" style="font-size: 16px;">
+   <nav class="navbar navbar-expand-md navbar-light fixed-top " style="background-color: #f8f9fa;">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active fw-bold text-dark cool" href="index.html">Men</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active fw-bold text-dark cool" href="women.html">Women</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-dark cool" href="#">Kids</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-bold text-dark cool" href="#">Socks</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-danger fw-bold cool" href="#">Sale</a>
-          </li>
-        </ul>
-
-        <a class="navbar-brand fw-bold m-0"
-          style=" font-family: Dancing Script, cursive; font-weight: bold;font-size: 30px; color: #000;"
-          href="#">Allbirds</a>
-        <div class="d-flex align-items-center gap-3">
-          <a class="nav-link p-0 fw-bold text-dark cool" href="#">Sustainability</a>
-          <a class="nav-link p-0 fw-bold text-dark cool" href="#">Rerun</a>
-          <a class="nav-link p-0 fw-bold text-dark cool" href="#">Stores</a>
-          <a class="nav-link p-0" href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-          <a class="nav-link p-0" href="#"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
-          <a class="nav-link p-0" href="#"><i class="fa-solid fa-cart-shopping" style="color: #050505;"></i></a>
+        <a class="navbar-brand fw-bold m-0" style="font-family: Dancing Script, cursive; font-weight: bold; font-size: 30px; color: #000;" href="index.html">Allbirds</a>
+        <button class="navbar-toggler text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-dark" id="offcanvasNavbar2Label" style="font-family: Dancing Script, cursive; font-weight: bold; font-size: 30px; color: #000;">Allbirds</h5>
+                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-dark cool" aria-current="page" href="men.html">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold text-dark cool" href="women.html">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold text-dark cool" href="kid.html">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark  fw-bold text-dark cool" href="socks.html">Socks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold cool" href="sale.html">Sales</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" style="position: relative;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <a class="nav-link p-0" href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000; position: absolute; right: 20px; top: 10px;"></i></a>
+                </form>
+                <div class="icon" style="display: flex; gap:1em; padding-top: 8px;">
+                    <a class="nav-link p-0" href="contact-us.html"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+                    <a class="nav-link p-0" href="#"><i class="fa-solid fa-cart-shopping" style="color: #050505;"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </nav>
+</nav>
   <!-- main image section -->
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="margin-top: 4.5em;">
     <div class="carousel-inner">
@@ -385,15 +404,17 @@
   <!-- card carousel -->
   <!-- card scroll -->
   <div class="arrival" style="padding-top: 3.1rem;">
-    <h1 class="text-left" style="padding-left: 1em;">NEW ARRIVAL</h1>
+    <h1 class="text-left" style="padding-left: 1em;font-size: 26px;">NEW ARRIVAL</h1>
   </div>
   <div class="container mt-4">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
           <img src="images/class2.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="background-color: rgb(199 205 222);">
+          <hr>
+          <div class="card-body">
             <h5 class="card-title">Men's tree runner go</h5>
+            <h6 style="color: red">$33</h6>
             <p class="card-text">LIMITED EDITION/COLOR BREEZY Blue</p>
           </div>
         </div>
@@ -401,8 +422,10 @@
       <div class="col">
         <div class="card h-100">
           <img src="images/class1.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="background-color: rgb(199 205 222);">
+          <hr>
+          <div class="card-body">
             <h5 class="card-title">Men's tree runner go</h5>
+            <h6 style="color: red">$35</h6>
             <p class="card-text">LIMITED EDITION/COLOR BREEZY PEACH</p>
           </div>
         </div>
@@ -410,8 +433,10 @@
       <div class="col">
         <div class="card h-100">
           <img src="images/classic2.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="background-color: rgb(199 205 222);">
+          <hr>
+          <div class="card-body">
             <h5 class="card-title">Men's tree runner go</h5>
+            <h6 style="color: red">$34</h6>
             <p class="card-text">LIMITED EDITION/COLOR BREEZY GREEN</p>
           </div>
         </div>
@@ -419,8 +444,10 @@
       <div class="col">
         <div class="card h-100">
           <img src="images/classic3.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="background-color: rgb(199 205 222);">
+          <hr>
+          <div class="card-body">
             <h5 class="card-title">Men's tree runner go</h5>
+            <h6 style="color: red">$29</h6>
             <p class="card-text">LIMITED EDITION/COLOR BREEZY GREY</p>
           </div>
         </div>
@@ -428,8 +455,10 @@
       <div class="col">
         <div class="card h-100">
           <img src="images/classic4.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="background-color: rgb(199 205 222);">
+          <hr>
+          <div class="card-body">
             <h5 class="card-title">Men's tree runner go</h5>
+            <h6 style="color: red">$33</h6>
             <p class="card-text">LIMITED EDITION/COLOR BREEZY WHITE</p>
           </div>
         </div>
@@ -437,9 +466,11 @@
       <div class="col">
         <div class="card h-100">
           <img src="images/classic5.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="background-color: rgb(199 205 222);">
+          <hr>
+          <div class="card-body">
             <h5 class="card-title">Men's tree runner go</h5>
-            <p class="card-text">LIMITED EDITION/COLOR BREEZY DARK GREEN BEIGE</p>
+            <h6 style="color: red">$22</h6>
+            <p class="card-text">LIMITED EDITION/BREEZY DARK BEIGE</p>
           </div>
         </div>
       </div>
@@ -457,7 +488,7 @@
     </div>
   </div>
   <div class="collection" style="padding-top: 3.5rem !important;">
-    <h1 class="text-left" style="padding-left: 1em;">SHOP OF THE COLLECTION</h1>
+    <h1 class="text-left" style="padding-left: 1em; font-size: 25px;">SHOP OF THE COLLECTION</h1>
   </div>
   <div class="card-group gap-4 pt-5" style="width: 90%;  justify-content: center;align-content: center;margin: 0 auto;">
     <div class="card" style="border: 1px solid black;">
@@ -494,7 +525,7 @@
     <button type="button" class="btn btn-light btn-outline-dark btn-lg">OUR SUSTANABILITY STARTEGY</button>
   </div>
   <div class="arrival-1" style="padding-top: 3.1rem;">
-    <h1 class="text-left" style="padding-left: 1em;">Allbirds Sustainability Initiatives </h1>
+    <h1 class="text-left" style="padding-left: 1em;font-size: 25px;">Allbirds Sustainability Initiatives </h1>
   </div>
   <div class="card-group gap-4 pt-5" style="width: 90%;  justify-content: center;align-content: center;margin: 0 auto;">
     <div class="card" style="border: 1px solid black;">
@@ -527,7 +558,7 @@
       <p class="mb-4">Join our email list and be the first to know about new limited edition products, material
         innovations, and lots of other fun updates.</p>
       <form class="d-flex justify-content-center">
-        <input type="email" class="form-control me-2" placeholder="Enter Your Email Address" style="max-width: 300px;">
+        <input type="email" class="form-control" placeholder="Enter Your Email Address" style="max-width: 300px;">
         <button type="submit" class="btn btn-dark">Sign Up</button>
       </form>
       <p class="mt-3"><small>Note: You can opt-out at any time. See our <a href="#" style="color: black;">Privacy
@@ -535,14 +566,14 @@
     </div>
   </div>
   <!-- content -->
-  <h2 class="pb-2" style="padding-left: 2.9em;">THE ALL BIRDS APPROACH</h2>
   <div class="container px-1 py-1" id="hanging-icons">
+    <h2 class="pb-2" style="padding-left: 5px; font-size: 23px">THE ALL BIRDS APPROACH</h2>
     <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">
         <div>
           <h3 class="text-body-emphasis" style="font-size: 1.4rem;">Wear-All-Day Comfort</h3>
           <p>Lightweight, bouncy, and wildly comfortable, Allbirds shoes make any outing feel effortless. Slip in, lace
-            up, or slide them on and enjoy the comfy support.</p>
+            up, or slide them on and enjoy the comfy support.make outing feel comfortable</p>
           <a href="#" style="color: black;">
             Learn more
           </a>
@@ -569,106 +600,103 @@
     </div>
   </div>
   <!-- footer section -->
-  <div class="foot" style="padding-top: 3em;">
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 mb-3">
-            <h6 class="text-uppercase fw-bold" style="color: white; font-size: 23px;">Help</h6>
-            <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
-              <li><a href="#" class="text-white" style="text-decoration: none;">1-888-963-8944</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">1-814-251-9966 (Text)</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">help@allbirds.com</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Returns/Exchanges</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">FAQ/Contact Us</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Afterpay</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 mb-3">
-            <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Shop</h6>
-            <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
-              <li><a href="#" class="text-white" style="text-decoration: none;">Men's Shoes</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Women's Shoes</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Men's Apparel</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Women's Apparel</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Socks</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Finder</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Gift Cards</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Refer a Friend</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 mb-3">
-            <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Company</h6>
-            <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
-              <li><a href="#" class="text-white" style="text-decoration: none;">Our Stores</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Our Story</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Our Materials</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Sustainability</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Investors</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Care</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Partnerships</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Affiliates</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Bulk Orders</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Careers</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Press</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Allbirds Responsible Disclosure
-                  Program</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">California Transparency Act</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Community Offers</a></li>
-              <li><a href="#" class="text-white" style="text-decoration: none;">Our Blog - The Perch</a></li>
-            </ul>
-          </div>
+  <footer class="py-5 bg-dark" style="padding-top: 3em;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-3">
+          <h6 class="text-uppercase fw-bold" style="color: white; font-size: 23px;">Help</h6>
+          <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
+            <li><a href="#" class="text-white" style="text-decoration: none;">1-888-963-8944</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">1-814-251-9966 (Text)</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">help@allbirds.com</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Returns/Exchanges</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">FAQ/Contact Us</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Afterpay</a></li>
+          </ul>
         </div>
-        <div class="row mt-4">
-          <div class="col-12 text-center">
-            <div class="d-inline-block mb-2">
-              <img src="images/flag-c4.svg" alt="Certified B Corporation" class="img-fluid" style="width: 50px;">
-              <span class="text-white">Certified B Corporation</span>
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/flag-us.svg" alt="United States Flag" class="img-fluid" style="width: 30px;">
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/flag-ca2.svg" alt="Canadian Flag" class="img-fluid" style="width: 30px;">
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/flag-ca3.svg" alt="United Kingdom Flag" class="img-fluid" style="width: 30px;">
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/flag-c4.svg" alt="Germany Flag" class="img-fluid" style="width: 30px;">
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/flag-c5.svg" alt="Australia Flag" class="img-fluid" style="width: 30px;">
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/flag-c6.svg" alt="New Zealand Flag" class="img-fluid" style="width: 30px;">
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/Japan-Flag7.svg" alt="Japan Flag" class="img-fluid" style="width: 30px;">
-            </div>
-            <div class="d-inline-block mx-3">
-              <img src="images/South-Korea-Flag8.svg" alt="South Korea Flag" class="img-fluid" style="width: 30px;">
-            </div>
-          </div>
+        <div class="col-lg-4 mb-3">
+          <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Shop</h6>
+          <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
+            <li><a href="#" class="text-white" style="text-decoration: none;">Men's Shoes</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Women's Shoes</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Men's Apparel</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Women's Apparel</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Socks</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Finder</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Gift Cards</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Refer a Friend</a></li>
+          </ul>
         </div>
-        <div class="row mt-4">
-          <div class="col-12 text-center">
-            <p class="mb-0 text-white">© 2024 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility</p>
-            <p class="mb-0 text-white">Do Not Sell My Personal Information</p>
-            <div class="social"
-              style="display: flex; flex-direction: row; gap: 16px; justify-content: center; align-items: center;padding-top: 1em;">
-              <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-              <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-              <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-              <i class="fa-brands fa-google" style="color: #f7f7f8;"></i>
-              <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i>
-              <i class="fa-brands fa-tiktok" style="color: #f4f5f5;"></i>
-            </div>
+        <div class="col-lg-4 mb-3">
+          <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Company</h6>
+          <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
+            <li><a href="#" class="text-white" style="text-decoration: none;">Our Stores</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Our Story</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Our Materials</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Sustainability</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Investors</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Care</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Partnerships</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Affiliates</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Bulk Orders</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Careers</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Press</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Allbirds Responsible Disclosure
+                Program</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">California Transparency Act</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Community Offers</a></li>
+            <li><a href="#" class="text-white" style="text-decoration: none;">Our Blog - The Perch</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <div class="d-inline-block mb-2">
+            <img src="images/flag-c4.svg" alt="Certified B Corporation" class="img-fluid" style="width: 50px;">
+            <span class="text-white">Certified B Corporation</span>
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/flag-us.svg" alt="United States Flag" class="img-fluid" style="width: 30px;">
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/flag-ca2.svg" alt="Canadian Flag" class="img-fluid" style="width: 30px;">
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/flag-ca3.svg" alt="United Kingdom Flag" class="img-fluid" style="width: 30px;">
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/flag-c4.svg" alt="Germany Flag" class="img-fluid" style="width: 30px;">
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/flag-c5.svg" alt="Australia Flag" class="img-fluid" style="width: 30px;">
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/flag-c6.svg" alt="New Zealand Flag" class="img-fluid" style="width: 30px;">
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/Japan-Flag7.svg" alt="Japan Flag" class="img-fluid" style="width: 30px;">
+          </div>
+          <div class="d-inline-block mx-3">
+            <img src="images/South-Korea-Flag8.svg" alt="South Korea Flag" class="img-fluid" style="width: 30px;">
           </div>
         </div>
       </div>
-  </div>
-  </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <p class="mb-0 text-white">© 2024 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility</p>
+          <p class="mb-0 text-white">Do Not Sell My Personal Information</p>
+          <div class="social"
+            style="display: flex; flex-direction: row; gap: 16px; justify-content: center; align-items: center;padding-top: 1em;">
+            <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-google" style="color: #f7f7f8;"></i>
+            <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-tiktok" style="color: #f4f5f5;"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
   <!-- Optional JavaScript; choose one of the two! -->
 

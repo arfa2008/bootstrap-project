@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>sales section</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins","Raleway", sans-serif, ;
+      font-style: normal;
+    }
+
+    .card-img-top {
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+    }
+
+    .card-hover {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card-hover .d-grid {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+
+    }
+
+    .card-hover:hover .d-grid {
+      opacity: 1;
+    }
+
+
+    .cool::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: black;
+      transition: width .3s;
+    }
+
+    .cool:hover::after {
+      width: 100%;
+      transition: width .3s;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- nav bar section -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top " style="background-color: #f8f9fa;">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold m-0" style="font-family: Dancing Script, cursive; font-weight: bold; font-size: 30px; color: #000;" href="index.html">Allbirds</a>
+        <button class="navbar-toggler text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-dark" id="offcanvasNavbar2Label" style="font-family: Dancing Script, cursive; font-weight: bold; font-size: 30px; color: #000;">Allbirds</h5>
+                <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-dark cool" aria-current="page" href="men.html">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold text-dark cool" href="women.html">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold text-dark cool" href="kid.html">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark  fw-bold text-dark cool" href="socks.html">Socks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger fw-bold cool" href="sale.html">Sales</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" style="position: relative;">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <a class="nav-link p-0" href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000; position: absolute; right: 20px; top: 10px;"></i></a>
+                </form>
+                <div class="icon" style="display: flex; gap:1em; padding-top: 8px;">
+                    <a class="nav-link p-0" href="contact-us.html"><i class="fa-solid fa-user" style="color: #000000;"></i></a>
+                    <a class="nav-link p-0" href="#"><i class="fa-solid fa-cart-shopping" style="color: #050505;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+ <!-- hero image -->
+ <div class="container-fluid p-0">
+    <div class="hero-image" style="position: relative; text-align: center; color: white;">
+        <img src="images/sales main 1.jpg" class="img-fluid w-100" alt="Hero Image">
+        <div class="hero-text" style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%);">
+            <h1 class="display-4" style="font-weight: 600; font-size: 16px;">Up to 40% Off Select Styles</h1>
+            <p class="lead" style="font-size: 13px; width: 65%; margin: 0 auto;">Get top shoes and apparel before they're gone for good.
+                 (Pro tip: Filter by size...and check out quick!).</p>
+        </div>
+    </div>
+</div>
+<!-- men sales section -->
+<div class="container-fluid" style="padding-top: 3em;">
+    <!-- Header Section -->
+    <div class="mb-3">
+        <h1 style="font-size: 23px; font-weight: 700;">Men sales</h1>
+    </div>
+    <!-- Card Section -->
+    <section class="row mb-5 justify-content-center">
+        <!-- First Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/men1.png" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Men's R&R Hoodie - Calm Card</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$116</s></h6>
+                    <p>Pale green hoodie-calm card</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/men 2.png" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Men's R&R Hoodie - Calm Card</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$118 - <s style="color: black;">$166</s></h6>
+                    <p>Pale Black hoodie-calm card</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/men3.png" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Men's soft merino Tee</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$88 - <s style="color: black;">$105</s></h6>
+                    <p>Men's soft Merino T-shirt</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- women sales -->
+<div class="container-fluid" style="padding-top: 3em;">
+    <!-- Header Section -->
+    <div class="mb-3">
+        <h1 style="font-size: 23px; font-weight: 700;">Women sales</h1>
+    </div>
+    <!-- Card Section -->
+    <section class="row mb-5 justify-content-center">
+        <!-- First Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/women 1.jpg" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Women's R&R Sweatshirts</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$92 - <s style="color: black;">$106</s></h6>
+                    <p>Women’s black hoodie-calm card</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/women 2.png" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Women's R&R Hoodie - Calm Card</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$116</s></h6>
+                    <p>women’s black hoodie-calm card</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/women 3.png" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Women's R&R Hoodie - Calm Card</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$116</s></h6>
+                    <p>women’s black hoodie-calm card</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- kids sales -->
+<div class="container-fluid" style="padding-top: 3em;">
+    <!-- Header Section -->
+    <div class="mb-3">
+        <h1 style="font-size: 23px; font-weight: 700;">Kid's sales</h1>
+    </div>
+    <!-- Card Section -->
+    <section class="row mb-5 justify-content-center">
+        <!-- First Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/kids1.png" class="card-img-top" alt="Image 1">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Summer lounger runner- little kids</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$93 - <s style="color: black;">$166</s></h6>
+                    <p>wool lounger little kids collection</p>
+                   
+                </div>
+            </div>
+        </div>
+        <!-- Second Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/kids 2.png" class="card-img-top" alt="Image 2">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">Summer wool runner- little kids</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$156</s></h6>
+                    <p>wool runner little kids collection</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third Card -->
+        <div class="col-md-4">
+            <div class="card custom-card">
+                <img src="images/kids 4.png" class="card-img-top" alt="Image 3">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">small birds soft runner-little kids</h5>
+                    <h6 class="card-text" style="color: rgb(211, 25, 25);">$88 - <s style="color: black;">$120</s></h6>
+                    <p>sodt runner little kids collection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- next section -->
+  <!-- next section -->
+  <div class="approach" style="padding-top: 4em;">
+    <div class="container px-1 py-1" id="hanging-icons">
+      <h2 class="pb-2" style="font-size: 30px;">THE ALL BIRDS APPROACH</h2>
+      <div class="row g-4 py-4 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="text-body-emphasis" style="font-size: 1.4rem;">Wear-All-Day Comfort</h3>
+            <p>Lightweight, bouncy, and wildly comfortable, Allbirds shoes make any outing feel effortless. Slip in,
+              lace up, or slide them on and enjoy the comfy support outing will may feel comfortable</p>
+            <a href="#" style="color: black;">
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="text-body-emphasis" style="font-size: 1.4rem;">Sustainability In Every Step</h3>
+            <p>From materials to transport, we’re working to reduce our carbon footprint to near zero. Holding ourselves
+              accountable and striving for climate goals isn’t a 30-year goal—it’s now.</p>
+            <a href="#" style="color: black;">
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="text-body-emphasis" style="font-size: 1.4rem;">Materials From The Earth</h3>
+            <p>We replace petroleum-based synthetics with natural alternatives wherever we can. Like using wool, tree
+              fiber, and sugar cane. They’re soft, breathable, and better for the planet—win, win, win.</p>
+            <a href="#" style="color: black;">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="py-5 bg-dark" style="padding-top: 3em;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <h6 class="text-uppercase fw-bold" style="color: white; font-size: 23px;">Help</h6>
+                <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
+                    <li><a href="#" class="text-white" style="text-decoration: none;">1-888-963-8944</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">1-814-251-9966 (Text)</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">help@allbirds.com</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Returns/Exchanges</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">FAQ/Contact Us</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Afterpay</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Shop</h6>
+                <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Men's Shoes</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Women's Shoes</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Men's Apparel</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Women's Apparel</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Socks</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Finder</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Gift Cards</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Refer a Friend</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <h6 class="text-uppercase fw-bold" style="color: white;font-size: 23px;">Company</h6>
+                <ul class="list-unstyled" style="display: flex;flex-direction: column; gap: 6px;">
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Our Stores</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Our Story</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Our Materials</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Sustainability</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Investors</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Shoe Care</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Partnerships</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Affiliates</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Bulk Orders</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Careers</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Press</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Allbirds Responsible
+                            Disclosure
+                            Program</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">California Transparency
+                            Act</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Community Offers</a></li>
+                    <li><a href="#" class="text-white" style="text-decoration: none;">Our Blog - The Perch</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <div class="d-inline-block mb-2">
+                    <img src="images/flag-c4.svg" alt="Certified B Corporation" class="img-fluid"
+                        style="width: 50px;">
+                    <span class="text-white">Certified B Corporation</span>
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/flag-us.svg" alt="United States Flag" class="img-fluid" style="width: 30px;">
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/flag-ca2.svg" alt="Canadian Flag" class="img-fluid" style="width: 30px;">
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/flag-ca3.svg" alt="United Kingdom Flag" class="img-fluid" style="width: 30px;">
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/flag-c4.svg" alt="Germany Flag" class="img-fluid" style="width: 30px;">
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/flag-c5.svg" alt="Australia Flag" class="img-fluid" style="width: 30px;">
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/flag-c6.svg" alt="New Zealand Flag" class="img-fluid" style="width: 30px;">
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/Japan-Flag7.svg" alt="Japan Flag" class="img-fluid" style="width: 30px;">
+                </div>
+                <div class="d-inline-block mx-3">
+                    <img src="images/South-Korea-Flag8.svg" alt="South Korea Flag" class="img-fluid"
+                        style="width: 30px;">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <p class="mb-0 text-white">© 2024 Allbirds, Inc. All Rights Reserved. Terms, Privacy & Accessibility
+                </p>
+                <p class="mb-0 text-white">Do Not Sell My Personal Information</p>
+                <div class="social"
+                    style="display: flex; flex-direction: row; gap: 16px; justify-content: center; align-items: center;padding-top: 1em;">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-google" style="color: #f7f7f8;"></i>
+                    <i class="fa-brands fa-pinterest" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-tiktok" style="color: #f4f5f5;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
