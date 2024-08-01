@@ -4,7 +4,7 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -105,6 +105,23 @@
       width: 100%;
       transition: width .3s;
     }
+
+    @media (min-width:300px) and (max-width:500px) {
+      .cool::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: black;
+        transition: width .3s;
+      }
+
+      .cool:hover::after,
+      .cool.active::after {
+        width: 20%;
+        transition: width .3s;
+      }
+    }
   </style>
 </head>
 
@@ -167,8 +184,8 @@
         <div class="carousel-caption position-absolute top-90 end-0 translate-middle-y text-end p-4" style="right: 0;">
           <h5 class="mb-3" style="font-size: 40px;">Breathable By Nature</h5>
           <p class="mb-4">Airy, light, rooted in comfort. Explore the Tree Collection.</p>
-            <a href="men.html" class="btn btn-primary btn-lg btn-light fw-300 text-dark me-2">Shop men</a>
-            <a href="women.html" class="btn btn-primary btn-lg btn-light fw-300 text-dark me-2">Shop Women</a>
+          <a href="men.html" class="btn btn-primary btn-lg btn-light fw-300 text-dark me-2">Shop men</a>
+          <a href="women.html" class="btn btn-primary btn-lg btn-light fw-300 text-dark me-2">Shop Women</a>
         </div>
       </div>
     </div>
@@ -188,11 +205,14 @@
       </li>
     </ul>
   </div>
-  <div class="tab-content">
-    <div id="everyday" class="tab-pane active">
-      <div class="row mt-4"
+  <!-- next section -->
+  <!-- Tab content -->
+  <div class="tab-content" id="myTabContent">
+    <!-- Everyday Tab -->
+    <div id="everyday" class="tab-pane fade show active" role="tabpanel" aria-labelledby="everyday-tab">
+      <div class="row mt-4 mb-3 mb-md-5"
         style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3 mb-md-0">
           <div class="card card-hover">
             <img src="images/tree1.jpg" class="card-img-top" alt="Tree Dasher 2">
             <div class="card-body">
@@ -200,26 +220,26 @@
               <p class="card-text">Bouncy, Lightweight Active Shoe</p>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3 mb-md-0">
           <div class="card card-hover">
-            <!-- <img src="images/shoe2.avif" class="card-img-top" alt="Tree Runner Go"> -->
-             <video src="images/video1.jpg" preload="auto" autoplay="" loop="" playsinline="" webkit-playsinline="" x5-playsinline="" style="width: 100%; height: 100%; object-fit: cover;"></video>
+            <video src="images/video1.jpg" preload="auto" autoplay="" loop="" playsinline=""
+              style="width: 100%; height: 100%; object-fit: cover;"></video>
             <div class="card-body">
               <h5 class="card-title">Tree Runner Go</h5>
               <p class="card-text">Reimagined Breezy, Everyday Sneaker</p>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-3 mb-md-0">
           <div class="card card-hover">
             <img src="images/tree2.jpg" class="card-img-top" alt="Tree Runner">
             <div class="card-body">
@@ -227,107 +247,100 @@
               <p class="card-text">Breezy, Everyday Sneaker</p>
             </div>
             <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- travel tab -->
-    <div id="travel" class="tab-pane fade">
-      <div class="tab-content">
-        <div id="everyday" class="tab-pane active">
-          <div class="row mt-4"
-            style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-            <div class="col-md-4">
-              <div class="card card-hover">
-                <img src="images/travel1.jpg" class="card-img-top" alt="Tree Dasher 2">
-                <div class="card-body">
-                  <h5 class="card-title">Tree Lounger</h5>
-                  <p class="card-text">Ultralight, Comfy Slip-On</p>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-                  <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
-                </div>
-              </div>
+    <!-- Travel Tab -->
+    <div id="travel" class="tab-pane fade" role="tabpanel" aria-labelledby="travel-tab">
+      <div class="row mt-4 mb-3 mb-md-5"
+        style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card card-hover">
+            <img src="images/travel1.jpg" class="card-img-top" alt="Tree Lounger">
+            <div class="card-body">
+              <h5 class="card-title">Tree Lounger</h5>
+              <p class="card-text">Ultralight, Comfy Slip-On</p>
             </div>
-            <div class="col-md-4">
-              <div class="card card-hover">
-                <img src="images/travel2.jpg" class="card-img-top" alt="Tree Runner Go">
-                <div class="card-body">
-                  <h5 class="card-title">Tree Dasher Relay</h5>
-                  <p class="card-text">Comfy, Breezy, Everyday Walks</p>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-                  <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
-                </div>
-              </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
             </div>
-            <div class="col-md-4">
-              <div class="card card-hover">
-                <img src="images/travel3.jpg" class="card-img-top" alt="Tree Runner">
-                <div class="card-body">
-                  <h5 class="card-title">Tree Skipper</h5>
-                  <p class="card-text">Lightweight Boat Shoe</p>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-                  <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card card-hover">
+            <img src="images/travel2.jpg" class="card-img-top" alt="Tree Dasher Relay">
+            <div class="card-body">
+              <h5 class="card-title">Tree Dasher Relay</h5>
+              <p class="card-text">Comfy, Breezy, Everyday Walks</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card card-hover">
+            <img src="images/travel3.jpg" class="card-img-top" alt="Tree Skipper">
+            <div class="card-body">
+              <h5 class="card-title">Tree Skipper</h5>
+              <p class="card-text">Lightweight Boat Shoe</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- everyday tab -->
-    <div id="activity" class="tab-pane fade">
-      <div class="tab-content">
-        <div id="everyday" class="tab-pane active">
-          <div class="row mt-4"
-            style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
-            <div class="col-md-4">
-              <div class="card card-hover">
-                <img src="images/activirty1.jpg" class="card-img-top" alt="Tree Dasher 2">
-                <div class="card-body">
-                  <h5 class="card-title">Tree Flyer 2</h5>
-                  <p class="card-text">Comfortable, Springy Active Shoe</p>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-                  <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
-                </div>
-              </div>
+
+    <!-- Activity Tab -->
+    <div id="activity" class="tab-pane fade" role="tabpanel" aria-labelledby="activity-tab">
+      <div class="row mt-4 mb-3 mb-md-5"
+        style="width: 90%; display: flex; justify-content: center; align-items: center; margin: 0 auto;">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card card-hover">
+            <img src="images/activity1.jpg" class="card-img-top" alt="Tree Flyer 2">
+            <div class="card-body">
+              <h5 class="card-title">Tree Flyer 2</h5>
+              <p class="card-text">Comfortable, Springy Active Shoe</p>
             </div>
-            <div class="col-md-4">
-              <div class="card card-hover">
-                <img src="images/activity2.jpg" class="card-img-top" alt="Tree Runner Go">
-                <div class="card-body">
-                  <h5 class="card-title">Golf Dasher</h5>
-                  <p class="card-text">Stabilizing And Comfy For The Green</p>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
-                </div>
-              </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
             </div>
-            <div class="col-md-4">
-              <div class="card card-hover">
-                <img src="images/activity3.jpg" class="card-img-top" alt="Tree Runner">
-                <div class="card-body">
-                  <h5 class="card-title">Trail Runner SWT</h5>
-                  <p class="card-text">Durable, Grippy, Off Road Terrain</p>
-                </div>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                  <a href="men.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop men</a>
-                  <a href="women.html" class="btn btn-light btn-outline-dark btn-lg"  style="font-size: 1em;">Shop Women</a>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card card-hover">
+            <img src="images/activity2.jpg" class="card-img-top" alt="Golf Dasher">
+            <div class="card-body">
+              <h5 class="card-title">Golf Dasher</h5>
+              <p class="card-text">Stabilizing And Comfy For The Green</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card card-hover">
+            <img src="images/activity3.jpg" class="card-img-top" alt="Trail Runner SWT">
+            <div class="card-body">
+              <h5 class="card-title">Trail Runner SWT</h5>
+              <p class="card-text">Durable, Grippy, Off Road Terrain</p>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <a href="men.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop men</a>
+              <a href="women.html" class="btn btn-light btn-outline-dark btn-lg" style="font-size: 1em;">Shop Women</a>
             </div>
           </div>
         </div>

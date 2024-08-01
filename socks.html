@@ -68,6 +68,22 @@
         width: 100%;
         transition: width .3s;
     }
+    @media (min-width:300px) and (max-width:500px) {
+      .cool::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: black;
+        transition: width .3s;
+      }
+
+      .cool:hover::after,
+      .cool.active::after {
+        width: 20%;
+        transition: width .3s;
+      }
+    }
 </style>
 
 <body>

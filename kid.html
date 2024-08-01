@@ -95,6 +95,23 @@
     background-color: #f8f9fa;
 
   }
+
+  @media (min-width:300px) and (max-width:500px) {
+    .cool::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: black;
+      transition: width .3s;
+    }
+
+    .cool:hover::after,
+    .cool.active::after {
+      width: 20%;
+      transition: width .3s;
+    }
+  }
 </style>
 
 <body>
@@ -134,7 +151,8 @@
             </li>
           </ul>
           <form class="d-flex" role="search" style="position: relative;">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="border: 1px solid rgb(202, 191, 191);">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+              style="border: 1px solid rgb(202, 191, 191);">
             <a class="nav-link p-0" href="#"><i class="fa-solid fa-magnifying-glass"
                 style="color: #000000; position: absolute; right: 20px; top: 10px;"></i></a>
           </form>
@@ -182,7 +200,8 @@
             <h5 class="card-title fw-bold " style="font-size: 10px;">SMALLBIRDS KIDS SHOES</h5>
             <h5 class="card-title fw-bold">Machine Washable</h5>
             <p class="card-text">Because kids love dirt and messes happen (a lot), each style is machine washable.</p>
-            <a href="sale.html" class="btn btn-light btn-outline-dark btn-lg fw-bold" style="font-size: 1em;">Shop Now</a>
+            <a href="sale.html" class="btn btn-light btn-outline-dark btn-lg fw-bold" style="font-size: 1em;">Shop
+              Now</a>
           </div>
         </div>
       </div>
@@ -250,14 +269,14 @@
   <!-- next section -->
   <div class="container pt-5">
     <div class="row mb-4">
-      <div class="col-md-5" style="position: relative;">
-        <h1 style="font-size: 18px;">Search</h1>
+      <div class="col-md-5 mb-3 mb-md-0" style="position: relative;">
+        <h4 class="fs-5">Search</h4>
         <i class="fas fa-search" style="position: absolute; bottom: 15px; right: 28px;"></i>
-        <input type="search" class="form-control" placeholder="Enter Search Term" aria-label="Search">
+        <input type="search" class="form-control form-control-sm" placeholder="Enter Search Term" aria-label="Search">
       </div>
-      <div class="col-md-4">
-        <h1 style="font-size: 18px;">Sort by</h1>
-        <select class="form-select" aria-label="Sort by">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h4 class="fs-5">Sort by</h4>
+        <select class="form-select form-select-sm" aria-label="Sort by">
           <option selected>Newest</option>
           <option value="1">Oldest</option>
           <option value="2">Highest Rating</option>
@@ -266,9 +285,9 @@
       </div>
     </div>
     <div class="row mb-4">
-      <div class="col-md-4">
-        <h1 style="font-size: 18px;">Star rating</h1>
-        <select class="form-select" aria-label="Star Rating">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h4 class="fs-5">Star rating</h4>
+        <select class="form-select form-select-sm" aria-label="Star Rating">
           <option selected></option>
           <option value="1">1 Star</option>
           <option value="2">2 Stars</option>
@@ -277,18 +296,18 @@
           <option value="5">5 Stars</option>
         </select>
       </div>
-      <div class="col-md-4">
-        <h1 style="font-size: 18px;">Typical Size</h1>
-        <select class="form-select" aria-label="Typical Size">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h4 class="fs-5">Typical Size</h4>
+        <select class="form-select form-select-sm" aria-label="Typical Size">
           <option selected></option>
           <option value="1">Small</option>
           <option value="2">Medium</option>
           <option value="3">Large</option>
         </select>
       </div>
-      <div class="col-md-4">
-        <h1 style="font-size: 18px;">Typical Width</h1>
-        <select class="form-select" aria-label="Typical Width">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h4 class="fs-5">Typical Width</h4>
+        <select class="form-select form-select-sm" aria-label="Typical Width">
           <option selected></option>
           <option value="1">Narrow</option>
           <option value="2">Average</option>
@@ -297,27 +316,27 @@
       </div>
     </div>
     <div class="row mb-4">
-      <div class="col-md-4">
-        <h1 style="font-size: 18px;">Overall Fit</h1>
-        <select class="form-select" aria-label="Overall Fit">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h4 class="fs-5">Overall Fit</h4>
+        <select class="form-select form-select-sm" aria-label="Overall Fit">
           <option selected></option>
           <option value="1">Too Small</option>
           <option value="2">True to Size</option>
           <option value="3">Too Large</option>
         </select>
       </div>
-      <div class="col-md-4">
-        <h1 style="font-size: 18px;">Activity</h1>
-        <select class="form-select" aria-label="Activity">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h4 class="fs-5">Activity</h4>
+        <select class="form-select form-select-sm" aria-label="Activity">
           <option selected></option>
           <option value="1">Casual</option>
           <option value="2">Sports</option>
           <option value="3">Formal</option>
         </select>
       </div>
-      <div class="col-md-4">
-        <h1 style="font-size: 18px;">Size purchased</h1>
-        <select class="form-select" aria-label="Size Purchased">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <h4 class="fs-5">Size purchased</h4>
+        <select class="form-select form-select-sm" aria-label="Size Purchased">
           <option selected></option>
           <option value="1">Small</option>
           <option value="2">Medium</option>
@@ -325,15 +344,17 @@
         </select>
       </div>
     </div>
-    <div class="text-right">
+    <div class="text-end">
       <h4>437 Reviews</h4>
     </div>
   </div>
+
   <!-- next section -->
+  <!-- Review Section 1 -->
   <div class="container mt-5">
     <hr>
-    <div class="row" style="display: flex; justify-content: space-between;">
-      <div class="col-md-6 col-md-6-custom">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
         <div class="d-flex flex-row gap-1">
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
@@ -345,9 +366,9 @@
         <p class="fw-bold fs-6 mb-2">These are super sturdy - just like our Allbirds and super cute.</p>
         <p class="mb-2">July 3, 2024</p>
       </div>
-      <div class="col-md-6 col-md-6-custom" style="width: 25%;">
+      <div class="col-md-6 col-sm-12">
         <div class="d-flex flex-column justify-content-end align-items-center bg-light p-3">
-          <ul class="list-unstyled w-100">
+          <ul class="list-unstyled">
             <li class="d-flex flex-row justify-content-between mb-2">
               <p class="fw-bold mb-0">Anna S.</p>
               <p class="fw-bold mb-0">Size Purchased: 5T</p>
@@ -366,8 +387,8 @@
   <!-- Review Section 2 -->
   <div class="container mt-5">
     <hr>
-    <div class="row" style="display: flex; justify-content: space-between;">
-      <div class="col-md-6 col-md-6-custom">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
         <div class="d-flex flex-row gap-1">
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
@@ -379,9 +400,9 @@
         <p class="fw-bold fs-6 mb-2">Love these for my 1 year old!!!</p>
         <p class="mb-2">June 27, 2024</p>
       </div>
-      <div class="col-md-6 col-md-6-custom" style="width: 25%;">
+      <div class="col-md-6 col-sm-12">
         <div class="d-flex flex-column justify-content-end align-items-center bg-light p-3">
-          <ul class="list-unstyled w-100">
+          <ul class="list-unstyled">
             <li class="d-flex flex-row justify-content-between mb-2">
               <p class="fw-bold mb-0">Jamie C.</p>
               <p class="fw-bold mb-0 fst-italic">Verified Buyer</p>
@@ -400,20 +421,20 @@
   <!-- Review Section 3 -->
   <div class="container mt-5">
     <hr>
-    <div class="row" style="display: flex; justify-content: space-between;">
-      <div class="col-md-6 col-md-6-custom">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
         <div class="d-flex flex-row gap-1">
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
           <i class="fa-solid fa-star" style="color: #0f0f10;"></i>
-          <i class="fa-solid fa-star-half-stroke"style="color: #0f0f10;"></i>
+          <i class="fa-solid fa-star-half-stroke" style="color: #0f0f10;"></i>
         </div>
         <p class="fw-bold fs-4 mb-2">Marshmallows for the feet!</p>
         <p class="fw-bold fs-6 mb-2">Lightweight, easy to put on and super comfortable! My daughter loves them!</p>
         <p class="mb-2">June 14, 2024</p>
       </div>
-      <div class="col-md-6 col-md-6-custom" style="width: 25%;">
+      <div class="col-md-6 col-sm-12">
         <div class="d-flex flex-column justify-content-end align-items-center bg-light p-3">
           <ul class="list-unstyled">
             <li class="d-flex flex-row justify-content-between">
@@ -557,7 +578,7 @@
             <img src="images/google1.jpg" alt="google" class="img-fluid" style="width: 20px;">
             <img src="images/pin1.jpg" alt="pinterest" class="img-fluid" style="width: 25px;">
             <img src="images/tiktok1.jpg" alt="tiktok" class="img-fluid" style="width: 25px;">
-          </div>        
+          </div>
         </div>
       </div>
     </div>

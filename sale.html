@@ -55,6 +55,18 @@
             transition: transform 0.3s;
         }
 
+        .lead {
+            font-size: 18px;
+            width: 100%;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        .display-4 {
+            font-weight: 600;
+            font-size: 25px;
+        }
+
         .card-hover {
             position: relative;
             overflow: hidden;
@@ -87,6 +99,37 @@
         .cool.active::after {
             width: 100%;
             transition: width .3s;
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            .hero-text {
+                font-size: 10px;
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .lead {
+                font-size: 14px;
+            }
+
+            .display-4 {
+                font-size: 20px;
+            }
+
+            .cool::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: black;
+                transition: width .3s;
+            }
+
+            .cool:hover::after,
+            .cool.active::after {
+                width: 20%;
+                transition: width .3s;
+            }
         }
     </style>
 </head>
@@ -147,154 +190,148 @@
     <!-- hero image -->
     <div class="container-fluid p-0">
         <div class="hero-image" style="position: relative; text-align: center; color: white;">
-            <img src="images/banner1.jpg.1.jpg" class="img-fluid w-100" alt="Hero Image">
+            <img src="images/banner1.jpg.1.jpg" class="img-fluid w-100" alt="Hero Image" style="margin-top: 4em;">
             <div class="hero-text" style="position: absolute; top: 70%; left: 50%; transform: translate(-50%, -50%);">
-                <h1 class="display-4" style="font-weight: 600; font-size: 16px;">Up to 40% Off Select Styles</h1>
-                <p class="lead" style="font-size: 18px; width: 65%; margin: 0 auto;">Get top shoes and apparel before
+                <h1 class="display-4">Up to 40% Off Select Styles</h1>
+                <p class="lead">Get top shoes
+                    and apparel before
                     they're gone for good.
                     (Pro tip: Filter by size...and check out quick!).</p>
             </div>
         </div>
     </div>
     <!-- men sales section -->
-    <div class="container" style="padding-top: 3em;">
+    <div class="container py-3">
         <!-- Header Section -->
         <div class="mb-3">
-            <h1 style="font-size: 23px; font-weight: 700;">Men sales</h1>
+            <h1 class="fs-4 fw-bold">Men Sales</h1>
         </div>
         <!-- Card Section -->
         <section class="row mb-5 justify-content-center">
             <!-- First Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/handsome1.jpg" class="card-img-top" alt="Image 1">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/handsome1.jpg" class="card-img-top" alt="Men's R&R Hoodie - Calm Card">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Men's R&R Hoodie - Calm Card</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$116</s>
-                        </h6>
+                        <h6 class="card-text text-danger">$98 - <s class="text-dark">$116</s></h6>
                         <p>Pale green hoodie-calm card</p>
                     </div>
                 </div>
             </div>
             <!-- Second Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/black hoodie1.jpg" class="card-img-top" alt="Image 2">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/black hoodie1.jpg" class="card-img-top" alt="Men's R&R Hoodie - Calm Card">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Men's R&R Hoodie - Calm Card</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$118 - <s style="color: black;">$166</s>
-                        </h6>
+                        <h6 class="card-text text-danger">$118 - <s class="text-dark">$166</s></h6>
                         <p>Pale Black hoodie-calm card</p>
                     </div>
                 </div>
             </div>
             <!-- Third Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/blue hoodie1.jpg" class="card-img-top" alt="Image 3">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/blue hoodie1.jpg" class="card-img-top" alt="Men's Soft Merino Tee">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Men's soft merino Tee</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$88 - <s style="color: black;">$105</s>
-                        </h6>
+                        <h5 class="card-title fw-bold">Men's Soft Merino Tee</h5>
+                        <h6 class="card-text text-danger">$88 - <s class="text-dark">$105</s></h6>
                         <p>Men's soft Merino T-shirt</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <!-- women sales -->
-    <div class="container" style="padding-top: 3em;">
+
+    <!-- Women Sales -->
+    <div class="container py-3">
         <!-- Header Section -->
         <div class="mb-3">
-            <h1 style="font-size: 23px; font-weight: 700;">Women sales</h1>
+            <h1 class="fs-4 fw-bold">Women Sales</h1>
         </div>
         <!-- Card Section -->
         <section class="row mb-5 justify-content-center">
             <!-- First Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/women 1 h.jpg" class="card-img-top" alt="Image 1">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/women 1 h.jpg" class="card-img-top" alt="Women's R&R Sweatshirts">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Women's R&R Sweatshirts</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$92 - <s style="color: black;">$106</s>
-                        </h6>
+                        <h6 class="card-text text-danger">$92 - <s class="text-dark">$106</s></h6>
                         <p>Women’s black hoodie-calm card</p>
                     </div>
                 </div>
             </div>
             <!-- Second Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/women hoodie2.jpg" class="card-img-top" alt="Image 2">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/women hoodie2.jpg" class="card-img-top" alt="Women's Hoodie - Black">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Women's Hoodie-black</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$116</s>
-                        </h6>
-                        <p>women’s black hoodie-calm card</p>
+                        <h5 class="card-title fw-bold">Women's Hoodie - Black</h5>
+                        <h6 class="card-text text-danger">$98 - <s class="text-dark">$116</s></h6>
+                        <p>Women’s black hoodie-calm card</p>
                     </div>
                 </div>
             </div>
             <!-- Third Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/women track 1.jpg" class="card-img-top" alt="Image 3">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/women track 1.jpg" class="card-img-top" alt="Women's Black Track Pants">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Women's black track-pants</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$116</s>
-                        </h6>
-                        <p>women’s black hoodie-calm card</p>
+                        <h5 class="card-title fw-bold">Women's Black Track Pants</h5>
+                        <h6 class="card-text text-danger">$98 - <s class="text-dark">$116</s></h6>
+                        <p>Women’s black track pants</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <!-- kids sales -->
-    <div class="container" style="padding-top: 3em;">
+
+    <!-- Kids Sales -->
+    <div class="container py-3">
         <!-- Header Section -->
         <div class="mb-3">
-            <h1 style="font-size: 23px; font-weight: 700;">Kid's sales</h1>
+            <h1 class="fs-4 fw-bold">Kids Sales</h1>
         </div>
         <!-- Card Section -->
         <section class="row mb-5 justify-content-center">
             <!-- First Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/kids1.png" class="card-img-top" alt="Image 1">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/kids1.png" class="card-img-top" alt="Boys Stripped Pullover - Little Kids">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Boys stripped pullover- little kids</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$93 - <s style="color: black;">$166</s>
-                        </h6>
-                        <p>wool lounger little kids collection</p>
-
+                        <h5 class="card-title fw-bold">Boys Stripped Pullover - Little Kids</h5>
+                        <h6 class="card-text text-danger">$93 - <s class="text-dark">$166</s></h6>
+                        <p>Wool lounger little kids collection</p>
                     </div>
                 </div>
             </div>
             <!-- Second Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/kids2.png" class="card-img-top" alt="Image 2">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/kids2.png" class="card-img-top" alt="Boys Casual Shirt - Little Kids">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Boys casual shirt- little kids</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$98 - <s style="color: black;">$156</s>
-                        </h6>
-                        <p>wool runner little kids collection</p>
+                        <h5 class="card-title fw-bold">Boys Casual cotton Shirt - Little Kids</h5>
+                        <h6 class="card-text text-danger">$98 - <s class="text-dark">$156</s></h6>
+                        <p>Wool runner little kids collection</p>
                     </div>
                 </div>
             </div>
             <!-- Third Card -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="images/little1.png" class="card-img-top" alt="Image 3">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="images/little1.png" class="card-img-top" alt="Textured Cotton T-shirt - Little Kids">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold">Textured cotton T-shirt-little kids</h5>
-                        <h6 class="card-text" style="color: rgb(211, 25, 25);">$88 - <s style="color: black;">$120</s>
-                        </h6>
+                        <h5 class="card-title fw-bold">Textured Cotton T-shirt - Little Kids</h5>
+                        <h6 class="card-text text-danger">$88 - <s class="text-dark">$120</s></h6>
                         <p>Fit cotton little kids collection</p>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+
     <!-- next section -->
     <!-- next section -->
     <div class="approach" style="padding-top: 4em;">
@@ -390,33 +427,34 @@
             <div class="row mt-4">
                 <div class="col-12 text-center">
                     <div class="d-inline-block mb-2">
-                        <img src="images/webp 1.webp" alt="Certified B Corporation" class="img-fluid" style="width: 50px;">
+                        <img src="images/webp 1.webp" alt="Certified B Corporation" class="img-fluid"
+                            style="width: 50px;">
                         <span class="text-white">Certified B Corporation</span>
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web2.webp" alt="United States Flag" class="img-fluid" style="width: 30px;">
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web3.webp" alt="Canadian Flag" class="img-fluid" style="width: 30px;">
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web4.webp" alt="United Kingdom Flag" class="img-fluid" style="width: 30px;">
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web5.webp" alt="Germany Flag" class="img-fluid" style="width: 30px;">
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web6.webp" alt="Australia Flag" class="img-fluid" style="width: 30px;">
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web7.webp" alt="india flag" class="img-fluid" style="width: 30px;">
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web 8.webp" alt="Japan Flag" class="img-fluid" style="width: 30px;">
-                      </div>
-                      <div class="d-inline-block mx-3">
+                    </div>
+                    <div class="d-inline-block mx-3">
                         <img src="images/web9.webp" alt="South Korea Flag" class="img-fluid" style="width: 30px;">
-                      </div>
+                    </div>
                 </div>
             </div>
             <div class="row mt-4">
